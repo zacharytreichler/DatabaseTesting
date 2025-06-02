@@ -30,7 +30,7 @@
                 <artifactId>exec-maven-plugin</artifactId>
                 <version>3.4.1</version>
                     <configuration>
-                        <mainClass>DatabaseTesting.src.main.java.App</mainClass>
+                        <mainClass>App</mainClass>
                     </configuration>
                     </plugin>
                     <plugin>
@@ -49,7 +49,7 @@
                         </descriptorRefs>
                     <archive>
                         <manifest>
-                            <mainClass>DatabaseTesting.src.main.java.App</mainClass>
+                            <mainClass>App</mainClass>
                         </manifest>
                     </archive>
                 </configuration>

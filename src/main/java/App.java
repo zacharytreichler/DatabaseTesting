@@ -1,5 +1,3 @@
-package DatabaseTesting.src.main.java;
-
 import java.util.*;
 import java.sql.*;
 
