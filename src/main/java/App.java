@@ -83,6 +83,15 @@ public class App {
         addConstraint(ADD_CONTAINER_CONSTRAINT2);
 
     }
+    /***
+     * Method Creation Date (DD/MM/YYYY, Developer Name): 28/5/2025, Zachary Treichler
+     * Most Recent Change (DD/MM/YYYY, Developer Name): 3/6/2025, Zachary Treichler
+     * Method Description: This method is used to generate tables in a database. It establishes a connection using a database URI, and then executes a prepared statement based
+     * on the query variable that was passed into the method. This method uses try with resources, so the connection closes if any error occurs to prevent zombie instances. 
+     * Functions Using This Method: main method
+     * Description of Variables:
+     * @param query - Used to store the SQL query that will be executed by this method
+     */
     public static void makeTable(String query){
         try(
             Connection c = DriverManager.getConnection(System.getenv("DATABASE_URI"));
